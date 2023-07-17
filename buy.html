@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>E-Commerce Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="images/icon.png" type="image">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="images/main.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="#" style="color: white;font-weight: bolder;font-style: oblique;">DANIYAL.COM</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle bg-default" data-toggle="dropdown" href="#">
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu" id="drop">
+                <li><a href="index.html">All Departments</a></li>
+                <li><a href="kitchen.html">Arts and Crafts</a></li>
+                <li><a href="#">Automotive</a></li>
+                <li><a href="clothing.html">Baby</a></li>
+                <li><a href="clothing.html">Beauty and Personal Care</a></li>
+                <li><a href="cellphones.html">Books</a></li>
+                <li><a href="cellphones.html">Computers</a></li>
+                <li><a href="cellphones.html">Digital Music</a></li>
+                <li><a href="cellphones.html">Electronics</a></li>
+                <li><a href="cellphones.html">Kindle Store</a></li>
+                <li><a href="clothing.html">Womens Fashion</a></li>
+                <li><a href="clothing.html">Mens Fashion</a></li>
+                <li><a href="clothing.html">Girls Fashion</a></li>
+                <li><a href="clothing.html">Boys Fashion</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="kitchen.html">Health & Household</a></li>
+                <li><a href="kitchen.html">Home & Kitchen</a></li>
+                <li><a href="kitchen.html">Industrail & Scientific</a></li>
+                <li><a href="kitchen.html">Luggage</a></li>
+                <li><a href="sports.html">Sports and Outdoors</a></li>
+                <li><a href="cellphones.html">Software</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a class="dropdown-toggle bg-default" data-toggle="dropdown" href="#">Account & lists
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a type="button"  class="btn btn-primary" style="color:white;" href="signin.html">Sign in</a></li>
+                <li class="text-center" style="color: white;background-color: lightgrey;">New Customer 
+                  <a href="login.html" style="font-weight: bolder;font-size: 15px;color: blue;background-color: white;">Start here</a></li>
+                <li><a href="#">Your Accounts</a></li>
+                <li><a href="#">Your Orders</a></li>
+                <li><a href="#">Buy Again</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Returns & Orders</a></li>
+            <li><a href="#">Carts</a></li>
+          </ul>
+        </div>   
+    </div>
+</nav>
+  
+
+<div class="rows" style="padding-bottom: 50px;padding-top:50px;">
+    <div class="col-75">
+      <div class="container">
+        <form action="/action_page.php">
+          <h1 class="text-center">Buying Process</h1>
+          <div class="meraj">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Akhlakh  Ahmed" required>
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="akhlakh@example.com" required>
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" id="adr" name="address" placeholder="ABC road Street" required>
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input type="text" id="city" name="city" placeholder="Aligarh" required>
+              <div class="meraj">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="UP" required>
+                </div>
+               <div class="col-50">
+                 <label for="zip">Zip</label>
+                 <input type="text" id="zip" name="zip" placeholder="10001" required>
+               </div>
+              </div>
+            </div>
+  
+            <div class="col-50">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="Akhlakh" required>
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+              <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+              <div class="meraj">
+                <div class="col-50">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2080" required>
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352" required>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <form>
+            <script src="https://checkout.razorpay.com/v1/payment-button.js" 
+            data-payment_button_id="pl_Jx4XIq6ZSDldNd" async> </script> 
+          </form>         
+          <!-- <input type="submit" value="Continue to checkout" class="btn"> -->
+        </form>
+      </div>
+    </div>
+    <div class="col-25">
+      <div class="container">
+        <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+        <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+        <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+        <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+        <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+        <hr>
+        <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+      </div>
+    </div>
+  </div>
+
+<div class="container-fluid" style="background: black;color: white;">
+  <div class="row"  id="down">
+    <div class="col-xs-6 col-sm-6 col-lg-3"  id="down" data-aos="fade-up" >
+      <h4>Get to know us</h4>
+      <div  id="down">
+        <div id="link"><a href="#">Carrers</a></div>
+        <div id="link"><a href="#">Blogs</a></div>
+        <div id="link"><a href="#">About Us</a></div>
+        <div id="link"><a href="#">Investor relations</a></div>
+        <div id="link"><a href="#">Our tour</a></div>
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-lg-3"  id="down"  data-aos="fade-up">
+    <h4>Make money with us</h4>
+    <div  id="down" >
+      <div id="link"><a href="#">Sell on this site</a></div>
+      <div id="link"><a href="#">Sell your Services</a></div>
+      <div id="link"><a href="#">Become an affiliate</a></div>
+      <div id="link"><a href="#">Advertise your product</a></div>
+      <div id="link"><a href="#">Self publish with us</a></div>
+    </div>  
+    </div>
+    <div class="col-xs-6 col-sm-6 col-lg-3"  id="down"   data-aos="fade-up">
+      <h4>Payment Product</h4>
+      <div  id="down">
+        <div id="link"><a href="#">Bussiness Card</a></div>
+        <div id="link"><a href="#">Shop with Points</a></div>
+        <div id="link"><a href="#">Reload your Balance</a></div>
+        <div id="link"><a href="#">Currency Converter</a></div>
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-lg-3"  id="down"  data-aos="fade-up">
+      <h4>Let Us Help You</h4>
+      <div  id="down">
+          <div id="link"><a href="#">Your Account</a></div>
+          <div id="link"><a href="#">Your Orders</a></div>
+          <div id="link"><a href="#">Shipping Rates & Policies</a></div>
+          <div id="link"><a href="#">Returns and Replacements</a></div>
+          <div id="link"><a href="#">Manage Your Contents and Devices</a></div>
+          <div id="link"><a href="#">Help</a></div>
+      </div>    
+    </div>
+  </div>
+  <p class="text-center">Copyright © <a href="http://merajahmed.live/">akhlakhahmed.live</a> 2020 All Rights Reserved.</p>
+</div>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    easing: 'ease-in-out-sine'
+  });
+</script>
+
+
+
+
+</body>
+</html>
